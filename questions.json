@@ -1,0 +1,13 @@
+[
+    {
+    "question": "What is the capital of Hungary?",
+    "choices": ["Berlin", "London", "Paris", "Budapest"],
+    "answer": "Budapest"
+    },
+
+    {
+    "question": "What is the capital of Germany?",
+    "choices": ["Berlin", "London", "Paris", "Budapest"],
+    "answer": "Berlin"
+    }
+]
