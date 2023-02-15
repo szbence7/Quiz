@@ -9,5 +9,11 @@
     "question": "What is the capital of Germany?",
     "choices": ["Berlin", "London", "Paris", "Budapest"],
     "answer": "Berlin"
-    }
+    },
+
+    {
+        "question": "In what year were Pest, Buda and Obuda united?",
+        "choices": ["1873", "1956", "1899", "1222"],
+        "answer": "1873"
+        }
 ]
