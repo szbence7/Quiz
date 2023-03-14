@@ -1,6 +1,7 @@
 let questions = null;
 let currentQuestion = 0;
 let score = 0;
+let isAnswered = false;
 
 function loadQuestions(callback) {
     let xobj = new XMLHttpRequest();
@@ -31,6 +32,7 @@ function displayQuestion() {
         const li = document.createElement("li");
         li.innerHTML = choice;
         li.onclick = () => {
+          isAnswered = true;
             if (choice === question.answer) {
                 score++;
                 document.getElementById("score").innerHTML = "Score: " + score;
@@ -41,6 +43,7 @@ function displayQuestion() {
 }
 
 function checkAnswer() {
+    if (isAnswered === true) {
     currentQuestion++;
     if (currentQuestion >= questions.length) {
         document.getElementById("question").innerHTML = "You finished the quiz!";
@@ -49,6 +52,9 @@ function checkAnswer() {
     } else {
         displayQuestion();
     }
+  } else {
+    alert("Please select an answer");
+  }
 }
 
 init();
