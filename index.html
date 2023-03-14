@@ -9,9 +9,14 @@
     <title>Quiz app</title>
 </head>
 <body>
+    <div id="start">
+        <h1>Welcome to my Quiz app</h1>
+        <button onclick="startQuiz()" type="button" class="btn btn-primary btn-lg">Start</button>
+        <p style="position: absolute; right: 5px; bottom: 5px;">by: <a style="text-decoration: none; color: currentColor;" href="http://github.com/szbence7">Bence</a></p>
+    </div>
+
     <main>
-        <h1>Welcome to the Quiz app</h1>
-        <p id="question"></p>
+        <h2 id="question"></h2>
         <ul id="choices"></ul>
         <button onclick="checkAnswer()" type="button" class="btn btn-primary btn-lg">Next</button>
         <p id="score"></p>

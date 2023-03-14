@@ -22,6 +22,12 @@ function loadQuestions(callback) {
     });
   }
 
+function startQuiz() {
+    document.getElementById("start").style.display = "none";
+    displayQuestion();
+}
+
+
 function displayQuestion() {
     const question = questions[currentQuestion];
     document.getElementById("question").innerHTML = question.question;
@@ -45,6 +51,7 @@ function displayQuestion() {
 function checkAnswer() {
     if (isAnswered === true) {
     currentQuestion++;
+    isAnswered = false;
     if (currentQuestion >= questions.length) {
         document.getElementById("question").innerHTML = "You finished the quiz!";
         document.getElementById("choices").innerHTML = "";
